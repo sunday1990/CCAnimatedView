@@ -18,7 +18,7 @@
 //获取当前的显示的vc
 #define CurrentRootVC        [(AppDelegate *)[UIApplication sharedApplication].delegate window].rootViewController;
 
-#define K_DefaultPopTime  0.6
+#define K_DefaultPopTime  1
 
 #define K_DefaultDismissTime 0.8
 
@@ -104,6 +104,19 @@
         self.centerX = WIDTH/2;
         self.centerY = HEIGHT/2;
         CGFloat fvalue = [value floatValue];
+        //进行变换
+        /**
+         
+         value = (h/4)x+h/4
+         
+         x = (value-h/4)/(h/4);
+         
+         newValue = x^2+(h/2-1)x+h/2
+         
+         newValue = [(value-h/4)/(h/4)]^2 + (h/2-1)*(value-h/4)/(h/4)+h/2;
+         
+         */
+        
         self.size = CGSizeMake(2*fvalue, 2*fvalue);
         self.layer.cornerRadius = fvalue;
     };
@@ -130,8 +143,6 @@
     
     dismissAlpha.writeBlock = ^(id obj, id value) {
         self.alpha = [value floatValue];
-        
-        
         if (self.alpha == 0) {
             if (self.animationFinished) {
                 self.animationFinished();
