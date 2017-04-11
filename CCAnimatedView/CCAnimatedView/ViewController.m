@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-#import "SpaceBeansView.h"
+#import "CHAnimationView.h"
 
 
 @interface ViewController ()
@@ -31,8 +31,8 @@
 
 
 - (IBAction)restartAnimation:(UIButton *)sender {
-    SpaceBeansView *beanView = [[SpaceBeansView beanView]defaultAnimationWithNum:2];
-    beanView.animationFinished = ^{
+ 
+    [[CHAnimationView beanView]defaultAnimationWithNum:2].animationFinished = ^{
         NSLog(@"animation finished!");
     };
 }

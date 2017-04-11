@@ -1,12 +1,12 @@
 //
-//  SpaceBeansView.m
+//  CHAnimationView.m
 //  CCAnimatedView
 //
 //  Created by ccSunday on 2017/4/11.
 //  Copyright © 2017年 ccSunday. All rights reserved.
 //
 
-#import "SpaceBeansView.h"
+#import "CHAnimationView.h"
 
 #import "CHAnimation.h"
 
@@ -37,7 +37,7 @@
 #define YELLOW_COLOR [UIColor colorWithHexString:@"#ffad2d"]
 
 
-@implementation SpaceBeansView
+@implementation CHAnimationView
 
 /*
 // Only override drawRect: if you perform custom drawing.
@@ -53,7 +53,7 @@
 
 - (id)init{
     
-    if ((self = [SpaceBeansView buttonWithType:UIButtonTypeCustom])) {
+    if ((self = [CHAnimationView buttonWithType:UIButtonTypeCustom])) {
         [self config];
     }
     return self;
@@ -80,7 +80,7 @@
  
  @return return value description
  */
-- (SpaceBeansView *)defaultAnimationWithNum:(NSInteger)beanNum{
+- (CHAnimationView *)defaultAnimationWithNum:(NSInteger)beanNum{
     self.hidden = NO;
     [self ch_removeAllAnimations];
     [self setTitle:[NSString stringWithFormat:@"+ %ld",(long)beanNum] forState:UIControlStateNormal];
@@ -115,6 +115,7 @@
     move.fromValue = [NSValue valueWithCGPoint:CGPointMake(self.centerX,self.centerY)];
     move.toValue = [NSValue valueWithCGPoint:CGPointMake(self.centerX, self.centerY-K_DefaultMoveLength)];
     move.writeBlock = ^(id obj, id value) {
+        
         self.center = [value CGPointValue];
     };
     [self ch_addAnimation:move forKey:@"move"];
@@ -124,8 +125,13 @@
     dismissAlpha.fromValue = @1.0;
     dismissAlpha.toValue = @0.0;
     dismissAlpha.duration = K_DefaultDismissTime;
+    
+    
+    
     dismissAlpha.writeBlock = ^(id obj, id value) {
         self.alpha = [value floatValue];
+        
+        
         if (self.alpha == 0) {
             if (self.animationFinished) {
                 self.animationFinished();
@@ -138,22 +144,6 @@
     
     return self;
     
-}
-
-/**
- 自定义动画时间
- 
- @param beanNum beanNum description
- @param ptime ptime description
- @param dtime distime description
- @return return value description
- */
-- (SpaceBeansView *)animationWithNum:(NSInteger)beanNum
-                             popTime:(NSTimeInterval)ptime
-                         dismissTime:(NSTimeInterval)dtime{
-    
-    
-    return self;
 }
 
 @end

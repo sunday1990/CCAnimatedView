@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		161D638D1E9C68DF008BCF84 /* SpaceBeansView.m in Sources */ = {isa = PBXBuildFile; fileRef = 161D638C1E9C68DF008BCF84 /* SpaceBeansView.m */; };
+		161D638D1E9C68DF008BCF84 /* CHAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 161D638C1E9C68DF008BCF84 /* CHAnimationView.m */; };
 		161D63901E9C6EDE008BCF84 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 161D638F1E9C6EDE008BCF84 /* UIView+frame.m */; };
 		161D63991E9C70F8008BCF84 /* CHAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 161D63941E9C70F8008BCF84 /* CHAnimation.m */; };
 		161D639A1E9C70F8008BCF84 /* CHAnimationState.m in Sources */ = {isa = PBXBuildFile; fileRef = 161D63961E9C70F8008BCF84 /* CHAnimationState.m */; };
@@ -15,6 +15,7 @@
 		161D63A01E9CB337008BCF84 /* bean@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 161D639E1E9CB337008BCF84 /* bean@2x.png */; };
 		161D63A11E9CB337008BCF84 /* bean@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 161D639F1E9CB337008BCF84 /* bean@3x.png */; };
 		161D63A41E9CB41D008BCF84 /* UIColor+expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 161D63A31E9CB41D008BCF84 /* UIColor+expanded.m */; };
+		161D63A81E9CBC61008BCF84 /* FuncTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 161D63A71E9CBC61008BCF84 /* FuncTool.m */; };
 		164D928F1E9B2F0A0090CABA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 164D928E1E9B2F0A0090CABA /* main.m */; };
 		164D92921E9B2F0A0090CABA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 164D92911E9B2F0A0090CABA /* AppDelegate.m */; };
 		164D92951E9B2F0A0090CABA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164D92941E9B2F0A0090CABA /* ViewController.m */; };
@@ -43,8 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		161D638B1E9C68DF008BCF84 /* SpaceBeansView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpaceBeansView.h; path = ../SpaceBeansView.h; sourceTree = "<group>"; };
-		161D638C1E9C68DF008BCF84 /* SpaceBeansView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpaceBeansView.m; path = ../SpaceBeansView.m; sourceTree = "<group>"; };
+		161D638B1E9C68DF008BCF84 /* CHAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHAnimationView.h; path = ../CHAnimationView.h; sourceTree = "<group>"; };
+		161D638C1E9C68DF008BCF84 /* CHAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHAnimationView.m; path = ../CHAnimationView.m; sourceTree = "<group>"; };
 		161D638E1E9C6EDE008BCF84 /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+frame.h"; path = "../UIView+frame.h"; sourceTree = "<group>"; };
 		161D638F1E9C6EDE008BCF84 /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+frame.m"; path = "../UIView+frame.m"; sourceTree = "<group>"; };
 		161D63931E9C70F8008BCF84 /* CHAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHAnimation.h; sourceTree = "<group>"; };
@@ -57,6 +58,8 @@
 		161D639F1E9CB337008BCF84 /* bean@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bean@3x.png"; sourceTree = "<group>"; };
 		161D63A21E9CB41D008BCF84 /* UIColor+expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+expanded.h"; sourceTree = "<group>"; };
 		161D63A31E9CB41D008BCF84 /* UIColor+expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+expanded.m"; sourceTree = "<group>"; };
+		161D63A61E9CBC61008BCF84 /* FuncTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuncTool.h; sourceTree = "<group>"; };
+		161D63A71E9CBC61008BCF84 /* FuncTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuncTool.m; sourceTree = "<group>"; };
 		164D928A1E9B2F0A0090CABA /* CCAnimatedView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCAnimatedView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		164D928E1E9B2F0A0090CABA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		164D92901E9B2F0A0090CABA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -129,10 +132,19 @@
 			children = (
 				161D639E1E9CB337008BCF84 /* bean@2x.png */,
 				161D639F1E9CB337008BCF84 /* bean@3x.png */,
-				161D638B1E9C68DF008BCF84 /* SpaceBeansView.h */,
-				161D638C1E9C68DF008BCF84 /* SpaceBeansView.m */,
+				161D638B1E9C68DF008BCF84 /* CHAnimationView.h */,
+				161D638C1E9C68DF008BCF84 /* CHAnimationView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		161D63A51E9CBC32008BCF84 /* FuncConvert */ = {
+			isa = PBXGroup;
+			children = (
+				161D63A61E9CBC61008BCF84 /* FuncTool.h */,
+				161D63A71E9CBC61008BCF84 /* FuncTool.m */,
+			);
+			name = FuncConvert;
 			sourceTree = "<group>";
 		};
 		164D92811E9B2F0A0090CABA = {
@@ -158,6 +170,7 @@
 		164D928C1E9B2F0A0090CABA /* CCAnimatedView */ = {
 			isa = PBXGroup;
 			children = (
+				161D63A51E9CBC32008BCF84 /* FuncConvert */,
 				161D639D1E9C712F008BCF84 /* View */,
 				161D639C1E9C7118008BCF84 /* Category */,
 				161D63921E9C70F2008BCF84 /* CHAnimation */,
@@ -344,7 +357,8 @@
 				161D639A1E9C70F8008BCF84 /* CHAnimationState.m in Sources */,
 				161D639B1E9C70F8008BCF84 /* CHAnimator.m in Sources */,
 				161D63901E9C6EDE008BCF84 /* UIView+frame.m in Sources */,
-				161D638D1E9C68DF008BCF84 /* SpaceBeansView.m in Sources */,
+				161D638D1E9C68DF008BCF84 /* CHAnimationView.m in Sources */,
+				161D63A81E9CBC61008BCF84 /* FuncTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
